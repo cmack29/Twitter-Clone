@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove defaults from navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+
+.nav-list a,
+.nav-list a:visited {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Styles */
+.center-lg {
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.height__100 {
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+}
+
+.two-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+/* .main-layout > * {
+  border: 1px solid rgb(204, 204, 204);
+} */
+
+.icons,
+.feed,
+.sidebar-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.icons li,
+.icon,
+.avatar {
+  width: 40px;
+  height: 40px;
+  /* 
+  border: 2px dotted rgb(0, 255, 42); */
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.feed li {
+  min-height: 200px;
+
+  border: 2px dotted lightcoral;
+}
+
+.sidebar-list li {
+  min-height: 80px;
+
+  border: 2px dotted lightcoral;
+}
+.three-column-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.tweet {
+  color: white;
+  height: 25px;
+  width: 120px;
+  border-radius: 30px;
+  background-color: rgb(0, 195, 255);
+}
+.tweet-two {
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: rgb(0, 195, 255);
+}
+.icons-bar {
+  margin-bottom: 2rem;
+  margin-right: 50px;
+}
+.icons-grid {
+  display: inline-block;
+}
+.nav-img {
+  margin-right: 1.5rem;
+}
+.header-two-column-grid {
+  display: grid;
+  grid-template-columns: 80px auto;
+  margin-top: 1rem;
+}
+.form-but-gap {
+  list-style-type: none;
+  height: 50px;
+  width: 60px;
+  border: none;
+  background-color: white;
+}
+.inline {
+  display: inline-block;
+}
+.main-profile-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.form-img {
+  height: 30px;
+  width: 30px;
+}
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  margin-top: 50px;
+}
